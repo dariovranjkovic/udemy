@@ -196,6 +196,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
@@ -213,6 +214,14 @@
     <Compile Include="Migrations\201702181425248_AddMembershipType.cs" />
     <Compile Include="Migrations\201702181425248_AddMembershipType.Designer.cs">
       <DependentUpon>201702181425248_AddMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702181438010_PopulateMembershipTypes.cs" />
+    <Compile Include="Migrations\201702181438010_PopulateMembershipTypes.Designer.cs">
+      <DependentUpon>201702181438010_PopulateMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702181454276_ApplyAnnotatiosToCusomerName.cs" />
+    <Compile Include="Migrations\201702181454276_ApplyAnnotatiosToCusomerName.Designer.cs">
+      <DependentUpon>201702181454276_ApplyAnnotatiosToCusomerName.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -285,6 +294,8 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Movies\Random.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Customers\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -306,6 +317,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201702181425248_AddMembershipType.resx">
       <DependentUpon>201702181425248_AddMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702181438010_PopulateMembershipTypes.resx">
+      <DependentUpon>201702181438010_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702181454276_ApplyAnnotatiosToCusomerName.resx">
+      <DependentUpon>201702181454276_ApplyAnnotatiosToCusomerName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
